@@ -211,7 +211,8 @@ main > section {
     font-size: 3rem;
   }
   .team-img-container,
-  .fact-container {
+  .fact-container,
+  .sponsors-img-container {
     grid-template-columns: 1fr;
   }
   .our-features {
@@ -233,6 +234,9 @@ main > section {
   }
   .fact-card {
     width: 100%;
+  }
+  .sponsors-img-container{
+    gap: 50px;
   }
 }
 
@@ -267,5 +271,8 @@ main > section {
   }
   .fact-card {
     width: 100%;
+  }
+  .sponsors-img-container{
+    grid-template-columns: repeat(2, 1fr);
   }
 }
