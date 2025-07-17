@@ -120,8 +120,7 @@ main > section {
 .featured-architect {
   gap: 54px;
 }
-.featured-texts-cards-container {
-}
+
 .featured-texts h3 {
   border-left: 5px solid #ff900e;
   padding-left: 20px;
@@ -151,7 +150,41 @@ main > section {
   font-size: 1.5rem;
 }
 
+/* Some Facts Section Styles */
+.some-facts .section-title {
+  margin: 0 0 24px;
+}
+.some-facts .section-description {
+  max-width: 542px;
+  margin: 0;
+}
+.fact-container {
+  margin: 100px 0 0 100px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  
+}
+.fact-card {
+  border: 1px solid #ff900e;
+  width: 240px;
+  height: 240px;
+  border-radius: 8px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.fact-number {
+  font-size: 2.8rem;
+  margin: 10px auto;
+}
+
+
+
+
+
 /* Responsive Media Query */
+
 /* Small Devices */
 @media screen and (max-width: 576px) {
   .navbar,
@@ -163,7 +196,8 @@ main > section {
   .banner-title {
     font-size: 3rem;
   }
-  .team-img-container {
+  .team-img-container,
+  .fact-container {
     grid-template-columns: 1fr;
   }
   .our-features {
@@ -176,34 +210,49 @@ main > section {
     margin-top: 10px;
     margin-left: 0;
   }
-  #bold-years{
-  font-size: 3rem;
-}
-
+  #bold-years {
+    font-size: 3rem;
+  }
+  .fact-container{
+    margin: 50px 20px 0;
+    gap: 30px;
+  }
+  .fact-card{
+    width: 100%;
+  }
 }
 
 /* Medium Devices Styles */
-@media screen and (min-width:576px) and (max-width:992px){
+@media screen and (min-width: 576px) and (max-width: 992px) {
   .teams,
-  .featured-architect{
+  .featured-architect {
     flex-direction: column;
   }
-  .our-features{
+  .our-features {
     margin-left: 20px;
     max-width: 100%;
   }
-  .feature-card{
+  .feature-card {
     max-width: 100%;
     margin: 0 20px 0;
   }
-    .architect-container img {
+  .architect-container img {
     width: 100%;
   }
   .architect-container button {
     margin-top: 10px;
     margin-left: 0;
   }
-  #bold-years{
-  font-size: 3rem;
-}
+  #bold-years {
+    font-size: 3rem;
+  }
+  .fact-container{
+    margin: 50px 20px 0;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    
+  }
+  .fact-card{
+    width: 100%;
+  }
 }
