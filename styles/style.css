@@ -197,6 +197,20 @@ main > section {
   filter: grayscale(100%);
 }
 
+/* Footer Section Styles */
+.footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1440px;
+  margin: 130px auto;
+    border-radius: 8px;
+  height: 100px;
+}
+.footer-text{
+  font-size: 1.25rem;
+}
+
 /* Responsive Media Query */
 
 /* Small Devices */
@@ -237,6 +251,9 @@ main > section {
   }
   .sponsors-img-container{
     gap: 50px;
+  }
+  .footer{
+    text-align: center;
   }
 }
 
